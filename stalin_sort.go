@@ -28,13 +28,12 @@ func stalin_sort(array []float64) []float64 {
 
 func main() {
 	rand.Seed(time.Now().Unix())
-	initial_array := rand.Perm(500)
 	var ini_arr_float []float64
-	for _, ele := range initial_array {
-		ini_arr_float = append(ini_arr_float, float64(ele))
+	for i := 0; i < 50; i++ {
+		initial_array := 100 * rand.Float64()
+		ini_arr_float = append(ini_arr_float, initial_array)
 	}
 	fmt.Println(ini_arr_float)
-	sorted_array := stalin_sort(ini_arr_float)
-	fmt.Println(sorted_array)
+	fmt.Println(stalin_sort(ini_arr_float))
 
 }
