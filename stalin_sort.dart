@@ -20,13 +20,9 @@ List stalin_sort(List arr) {
 main() {
   var rdm = new Random();
   var newa = [];
-  for (var i = 0; i < 100; i++) {
-    newa.add(rdm.nextInt(1000));
+  for (var i = 0; i < 50; i++) {
+    newa.add(100 * rdm.nextDouble());
   }
-  var newb = [];
-  for (int i in newa) {
-    newb.add(i.toDouble());
-  }
-  print(newb);
-  print(stalin_sort(newb));
+  print(newa);
+  print(stalin_sort(newa));
 }
