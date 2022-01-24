@@ -17,7 +17,7 @@ end
 
 arrc = [] of Float64
 i = 0
-while i < 30
+while i < 50
   iw = Random.rand(100.0)
   arrc.push(iw)
   i += 1

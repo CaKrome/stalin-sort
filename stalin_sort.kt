@@ -19,8 +19,8 @@ fun stalin_sort(inp: ArrayList<Double>): ArrayList<Double> {
 
 fun main() {
     var a = arrayListOf<Double>()
-    for (j in 0..100) {
-        var ww = Random.nextDouble(0.0, 300.0)
+    for (j in 0..49) {
+        var ww = Random.nextDouble(0.0, 100.0)
         a.add(ww)
     }
     println(a)
