@@ -28,7 +28,7 @@ void main(string[] args)
     int siz = 0;
     double[] sarr = new double[siz];
     for (int i = 0; i < 50; i++) {
-        double u = uniform01();
+        double u = 100 * uniform01();
         sarr ~= u;
     }
 
